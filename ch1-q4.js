@@ -5,7 +5,7 @@
  * @param {string} str 
  * @returns {boolean}
  */
-function isPalindrome(str) {
+function isPalindromePermutation(str) {
     const loweredStr = str.toLowerCase();
     let chars = new Set();
 
@@ -22,5 +22,5 @@ function isPalindrome(str) {
     return chars.size <= 1;
 }
 
-console.log( isPalindrome("Tact Coa") ); // true -> "taco cat" is a permutation
-console.log( isPalindrome("race car") ); // true
+console.log( isPalindromePermutation("Tact Coa") ); // true -> "taco cat" is a permutation
+console.log( isPalindromePermutation("race car") ); // true
